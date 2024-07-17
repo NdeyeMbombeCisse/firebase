@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="formulaire">
+            <!-- libelle -->
+            <div class="libelle">
+                <label for="libelle"> quelle est le libelle de l'idee</label>
+                <input type="text" name="libelle" id="libelle">
+                <span id="libelleError"> </span>
+            </div>
+            <!-- categorie  -->
+            <div class="categorie">
+                <label for="categorie"> quelle est la categorie de l'idee</label>
+                <select name="categorie" id="categorie">
+                <option value="Sante"> sante</option>
+                <option value="Politique">politique</option>
+                <option value="Sport">sport</option>
+                <option value="Autres">autres</option>
+                <span id="categorieError"> </span>
+                </select>
+            </div>
+            <!-- description -->
+            <div class="description">
+                <label for="description"> quelle est la description de l'idee</label>
+                <textarea name="description" id="description"></textarea>
+                <span id="descriptionError"> </span>
+            </div>
+
+            <input type="submit" value="enregistrer">
+            <span id="erreur"></span>
+        </form>
+    </div>
+    <h2>les donnees soumises</h2>
+
+    <div class="afficher">
+       <ul id="dataList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
